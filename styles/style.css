@@ -37,10 +37,15 @@ a {
     justify-content: center;
 }
 
-.item-nav {
+.item-nav,
+.item-nav-x {
     background: none;
     border-style: none;
     cursor: pointer;
+}
+
+.item-nav-x {
+    display: none;
 }
 
 .nav-header i{
@@ -95,7 +100,26 @@ a {
     }
 
     .nav-header {
-        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 35vw;
+        background-color: aqua;
+        box-shadow: 10px 0 1em;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: -100vw;
+    }
+
+    .item-nav {
+        margin: 2em 0;
+    }
+
+    .item-nav-x {
+        display: flex;
+        margin: 1.2em 0;
     }
 
     .btn-exp {
