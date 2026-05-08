@@ -60,6 +60,7 @@ a {
 
 .btn-exp {
     display: none;
+    background-color: transparent;
     background: none;
     border-style: none;
     cursor: pointer;
@@ -110,7 +111,8 @@ a {
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        margin-left: -100vw;
+        margin-left: -50vw;
+        transition: .5s;
     }
 
     .item-nav {
