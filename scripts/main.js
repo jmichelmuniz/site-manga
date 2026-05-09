@@ -20,7 +20,7 @@
  }
 
  window.addEventListener('resize', function(event) {
-    if(window.innerWidth > 630 && showSidebar){
+    if(window.innerWidth >= 630){
         navHeader.style.marginLeft = '0';
         corpo.style.filter = 'none';
     }

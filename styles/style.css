@@ -8,16 +8,19 @@
     font-size: 16px;
 }
 
-html {
-    background-image: url('../images/background.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+:root {
+    --cor1 : #9e35c4;
+    --cor2 : #9532ab;
+    --cor3 : #151515;
+    --cor4 : #19191a;
 }
 
 a {
     text-decoration: none;
+}
+
+body {
+    background-color: var(--cor3);
 }
 
 .header {
@@ -25,7 +28,7 @@ a {
     height: 80px;
     width: 100%;
     border-style: solid;
-    background-color: aqua;
+    background-color: var(--cor1);
     position: fixed;
     top: 0;
     z-index: 1000;
@@ -48,8 +51,20 @@ a {
     display: none;
 }
 
-.nav-header i{
+.item-nav:hover{
+    background-color: var(--cor2);
+}
+
+.item-nav.active i{
+    background-color: var(--cor2);
+}
+
+.nav-header i,
+.nav-header i:hover {
     font-size: 2em;
+    padding: 10px;
+    width: 2em;
+    border-radius: 8px;
 }
 
 .nav-header a{
@@ -75,12 +90,11 @@ a {
 
 .logo {
     display: flex;
-    margin: 0 2em;
 }
 
 .logo img{
     display: flex;
-    max-block-size: 5em;
+    max-height: 5em;
 }
 
 .corpo {
@@ -88,10 +102,9 @@ a {
 }
 
 .conteudo {
-    background-color: aqua;
+    background-color: var(--cor1);
     padding: 1%;
     margin: 5%;
-    opacity: .8;
     border-radius: 10px;
 }
 
@@ -106,7 +119,7 @@ a {
         left: 0;
         height: 100%;
         width: 35vw;
-        background-color: aqua;
+        background-color: var(--cor1);
         box-shadow: 10px 0 1em;
         flex-direction: column;
         justify-content: flex-start;
@@ -119,12 +132,30 @@ a {
         margin: 2em 0;
     }
 
+    .item-nav:hover {
+        border-radius: 8px;
+    }
+
     .item-nav-x {
         display: flex;
         margin: 1.2em 0;
+        border-radius: 8px;
+    }
+
+    .item-nav-x i:hover {
+        background-color: var(--cor2);
     }
 
     .btn-exp {
         display: flex;
+    }
+
+    .btn-exp i{
+        border-radius: 8px;
+        padding: 5px 15px;
+    }
+
+    .btn-exp i:hover {
+        background-color: var(--cor2);
     }
 }
