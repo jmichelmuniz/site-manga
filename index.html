@@ -3,30 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <title>Muniz Mangas</title>
+    <title>Ipê Mangás</title>
+    <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
     <div class="header">
-        <button onclick="toggleBar()" class="btn-exp"><i class="bi bi-list"></i></button>
+        <div class="exp-btn">
+            <button onclick="showSidebar()"><a href="#"><i class="bi bi-list"></i></a></button>
+        </div>
+
 
         <div class="logo">
             <a href="#"><img src="/images/logo.png" alt="Logo"></a>
         </div>
 
-        <div class="nav-header" id="nav-header">
-            <button onclick="toggleBar()" class="item-nav-x"><a href="#"><i class="bi bi-x"></i></a></button>
-            <button class="item-nav active" id="home"><a href="#"><i class="bi bi-house"></i></a></button>
-            <button class="item-nav" id="search"><a href="#"><i class="bi bi-search" style="font-size: 1.7em;"></i></a></button>
-            <button class="item-nav" id="login"><a href="#"><i class="bi bi-person-circle"></i></a></button>
+
+        <div class="navbar" id="navbar">
+            <button onclick="showSidebar()" class="nav-item" id="btn-fechar"><a href="#"><i class="bi bi-x"></i></a></button>
+            <button class="nav-item active"><a href="#"><i class="bi bi-house"></i>Inicio</a></button>
+            <button class="nav-item"><a href="#"><i class="bi bi-search"></i>Pesquisar</a></button>
+            <button class="nav-item"><a href="#"><i class="bi bi-bell"></i>Novidades</a></button>
+            <button class="nav-item"><a href="#"><i class="bi bi-journals"></i>Scans</a></button>
+            <button class="nav-item" id="btn-login"><a href="#"><i class="bi bi-person-circle"></i>Entrar</a></button>
+        </div>
+
+
+        <div class="btn-login">
+            <button><a href="#"><i class="bi bi-person-circle"></i>Entrar</a></button>
         </div>
     </div>
 
-    <div tabindex="0" onclick="closeBar()" class="corpo" id="corpo">
-        <div class="conteudo">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, sapiente in non odio eveniet delectus harum laborum voluptatum! Autem amet, nulla totam enim magnam nam accusamus laboriosam veritatis tempore a?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi hic, accusamus nostrum eligendi adipisci similique aliquam debitis, temporibus voluptatem earum eum sed tenetur consequuntur doloremque? At cumque sequi quasi delectus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque odio reiciendis maxime amet ab eveniet in, consequatur totam explicabo itaque, voluptatibus porro quia quibusdam voluptatem excepturi, ad delectus consequuntur! Architecto? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur necessitatibus nesciunt perferendis distinctio in deleniti suscipit sint eum quos tempora facere fugit deserunt, dolor repudiandae id culpa reprehenderit obcaecati. Doloremque? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, tempora cupiditate. Hic, earum nemo magnam, ut minima est laborum deserunt amet, vel eum recusandae maxime libero. Fugiat labore quod voluptatibus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus doloribus earum blanditiis a! Repellendus, numquam. Unde doloremque minima harum aliquid, voluptate tempora quasi quis sit modi consequatur magnam nulla quae!</p>
-        </div>
+
+    <div class="conteudo">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa doloremque temporibus magni excepturi, tempora sed id ipsa facilis, iste fugiat enim quibusdam molestias eum laborum assumenda, aliquid cumque provident recusandae.
+        Laudantium quibusdam officia perspiciatis perferendis explicabo quos aut veritatis exercitationem odio repellat minus nobis voluptas dolores ipsam sapiente, sed aspernatur quia alias sequi non cum veniam. Assumenda nostrum ullam cumque.
+        Ipsa ullam incidunt, quo iusto veritatis, eligendi mollitia facere possimus ducimus necessitatibus accusantium maiores exercitationem dolor obcaecati sed ipsum eaque temporibus. Aliquam officia ratione unde sit eos assumenda, perspiciatis quod!
+        Atque dicta aliquam accusamus, iste quam ullam pariatur sit quibusdam corrupti, ipsa tenetur ab repellat. Dolor exercitationem molestiae illo hic, maxime aut commodi totam similique aperiam possimus nobis tenetur recusandae.
+        Assumenda labore laboriosam dolor nulla, corporis ab tempora accusamus consequuntur voluptatibus, deleniti fugiat recusandae voluptatem rerum magnam. Voluptatibus eaque, magni, unde nam distinctio possimus optio error totam voluptates quod voluptate!
+        Ipsa nisi, ullam accusamus inventore quibusdam eligendi vitae, atque officiis dolor, velit fugiat esse enim illum? Repellat itaque iste illo, et nesciunt perferendis quidem, ab autem eius sequi modi harum!
+        Excepturi voluptatem voluptate ut quia dignissimos quisquam consequuntur libero maxime vero quas quos at quo delectus numquam quod dolores perferendis optio porro soluta placeat, nisi commodi? Velit nam ullam odio.
+        Culpa, sint. Laboriosam eveniet suscipit quam! Perspiciatis illo officia voluptas nemo ipsa! Eos perferendis perspiciatis modi reiciendis officia quis, vero saepe non corporis quas sequi blanditiis adipisci nulla autem? Eum?
+        Mollitia explicabo omnis neque ea, distinctio repellendus error, itaque reprehenderit, possimus non delectus repellat ut aliquid molestiae quibusdam exercitationem sed dolor accusantium nobis velit similique! Odit porro suscipit labore eius?
+        Enim, ipsa vel? Cum, reiciendis. Maxime facilis sapiente, possimus eaque ipsa voluptas saepe? Neque facere, atque ea maiores nobis praesentium nihil corrupti at! Voluptatem excepturi suscipit distinctio labore nam dolorum?</p>
     </div>
+    <script src="scripts/main.js"></script>
 </body>
-<script src="scripts/main.js"></script>
 </html>
